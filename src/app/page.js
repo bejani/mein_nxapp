@@ -10,7 +10,7 @@ export default async function Home() {
     <pre>{data.map(rec=>{
       return (
         <div>
-        <div>{rec.name}</div><div>{rec.description}</div>
+        <div key={rec.id} >{rec.name}</div>
         </div>
       )
     })}</pre>
